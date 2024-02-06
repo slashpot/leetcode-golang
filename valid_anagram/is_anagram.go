@@ -10,6 +10,7 @@ func isAnagram(s string, t string) bool {
 			charMap[char] = 1
 		}
 	}
+
 	for _, char := range []byte(t) {
 		value, ok := charMap[char]
 		if ok {
